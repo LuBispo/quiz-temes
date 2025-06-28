@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Interativo</title>
+  <link rel="stylesheet" href="projeto2/style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+
+    <!-- Página inicial -->
+    <div id="intro-screen">
+      <img src="https://via.placeholder.com/300x150?text=Quiz+Aleatório" alt="Quiz" class="intro-image">
+      <h1>Bem-vindo ao Quiz de Temas Aleatórios!</h1>
+      <p>Testa teus conhecimentos em temas variados. Clique para começar!</p>
+      <button id="start-btn">Iniciar Quiz</button>
+    </div>
+
+    <!-- Tela de tema -->
+    <div id="theme-screen" class="hidden">
+      <h2>O tema sorteado é...</h2>
+      <p id="theme-name" class="theme-name"></p>
+    </div>
+
+    <!-- Tela de perguntas -->
+    <div id="quiz-screen" class="hidden">
+      <p id="question">Carregando pergunta...</p>
+      <form id="answers"></form>
+      <button id="submit" disabled>Enviar</button>
+    </div>
+
+    <!-- Tela de resultado -->
+    <div id="result" class="hidden">
+      <p id="result-text"></p>
+      <button id="restart-btn">Voltar ao Início</button>
+    </div>
+
+  </div>
+
+  <script src="projeto2/script.js"></script>
+</body>
+</html>
+
+
